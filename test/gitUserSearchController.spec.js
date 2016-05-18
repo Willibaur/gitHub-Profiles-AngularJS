@@ -14,23 +14,36 @@ describe('GitUserSearchController', function () {
 
   describe('when searching for a user', function() {
 
-  var items = [
-    {
-      "login": "Willibaur",
-      "avatar_url": "https://avatars.githubusercontent.com/u/12820932?v=3",
-      "html_url": "https://github.com/Willibaur"
-    },
-    {
-      "login": "gocardless",
-      "avatar_url": "https://avatars.githubusercontent.com/u/790629?v=3",
-      "html_url": "https://github.com/gocardless"
-    }
-  ];
+    var httpBackend;
 
-  it('displays search results', function() {
-    ctrl.searchTerm = 'hello';
-    ctrl.doSearch();
-    expect(ctrl.searchResult.items).toEqual(items);
+    beforeEach(inject(function($httpBackend) {
+      httpBackend = $httpBackend;
+
+      httpBackend
+        .when("GET", "https://api.github.com/search/users?q=gocardless")
+        .respond(
+          { items: items }
+        );
+    }));
+
+    var items = [
+      {
+        "login": "Willibaur",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12820932?v=3",
+        "html_url": "https://github.com/Willibaur"
+      },
+      {
+        "login": "gocardless",
+        "avatar_url": "https://avatars.githubusercontent.com/u/790629?v=3",
+        "html_url": "https://github.com/gocardless"
+      }
+    ];
+
+    it('displays search results', function() {
+      ctrl.searchTerm = 'gocardless';
+      ctrl.doSearch();
+      httpBackend.flush();
+      expect(ctrl.searchResult.items).toEqual(items);
+    });
   });
-});
 });
