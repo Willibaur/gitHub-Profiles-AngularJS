@@ -1,0 +1,23 @@
+{
+  "name": "gitHub-Profiles-AngularJS",
+  "authors": [
+    "William Bautista <williambautista@gmail.com>"
+  ],
+  "description": "Single Page Application requesting info from GitHub API",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/Willibaur/gitHub-Profiles-AngularJS",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.5",
+    "angular-resource": "^1.5.5"
+  }
+}
