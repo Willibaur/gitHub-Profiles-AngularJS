@@ -20,11 +20,16 @@ describe('GitUserSearchController', function () {
       httpBackend = $httpBackend;
 
       httpBackend
-        .when("GET", "https://api.github.com/search/users?q=gocardless")
+        .expectGET("https://api.github.com/search/users?access_token=94cd83ca2460358470f86cecd23620b61f242a36&q=gocardless")
         .respond(
           { items: items }
-        );
+      );
     }));
+
+    afterEach(function() {
+        httpBackend.verifyNoOutstandingExpectation();
+        httpBackend.verifyNoOutstandingRequest();
+       });
 
     var items = [
       {
