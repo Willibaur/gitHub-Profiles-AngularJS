@@ -18,13 +18,18 @@
 <body ng-controller="GitUserSearchController as searchCtrl">
   <div>
     <form class="form-horizontal">
-      <input type="text" placeholder="Username" ng-model="searchCtrl.searchTerm">
+      <input type="text" placeholder="Username"
+             ng-model="searchCtrl.searchTerm"
+             ng-model-options="{ updateOn: 'default blur',
+                                 debounce: {'default':500, 'blur': 0}}"
+             ng-change="searchValueForm.$valid &amp;&amp; searchCtrl.doSearch()"
+             required autofocus>
       <button class="btn" ng-click="searchCtrl.doSearch()">Search</button>
     </form>
 
     <ul class="list-group">
       <li ng-repeat="user in searchCtrl.searchResult.items">
-        <img ng-src="{{user.avatar_url}}&s=50">
+        <img ng-src="{{user.avatar_url}}&s=50" width="100" height="100">
         <a ng-ref="{{user.html_url}}">{{user.login}}</a>
       </li>
     </ul>
