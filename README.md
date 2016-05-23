@@ -5,33 +5,25 @@
 GitHub Profile Search
 =================
 
-Count and sum the scores of a bowling game for one player (in JavaScript).
+Basic GitHub profile search, returns username profile info.
 
-A bowling game consists of 10 frames in which the player tries to knock down the 10 pins. In every frame the player can roll one or two times. The actual number depends on strikes and spares. The score of a frame is the number of knocked down pins plus bonuses for strikes and spares. After every frame the 10 pins are reset.
-
-
-### Optional Extra
-
-Create a nice interactive animated interface with jQuery.
-
+It was written in JavaScript as single page application SAP, thanks to AngularJS, using TDD and BDD.
 
 
 Technologies used
 -----------------
 
   * Testing
-    * Jasmine
+    * Karma-Jasmine
+    * Protractor
 
   * Back end framework
     * JavaScript
+    * node.js
+    * Bower
 
   * Front end framework
-    * jQuery
-
-
-Functionalities requested
--------------------------
-
+    * AngularJS
 
 
 Setting up testing environment
