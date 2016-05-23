@@ -1,13 +1,82 @@
-Front end test:
 
-The purpose of this test is to create a new interface using the Github API: https://developer.github.com/v3/
-The application must contain a form where you can enter a Github username or organization.
-Once the form is submitted, it returns the paginated list of public repository for this specific user or organization.
-The results table must be paginated, sortable and filterable by all the options available on the API.
-The code must be shared via a Github repository with a README explaining your choices.
-For the purpose of this test you MUST use an MV* javascript framework (angularjs, emberjs, …).
-You are also free to choose the CSS framework you prefer.
-Don’t forget to write automated tests.
 
-Bonus:
- * Make it available on Heroku.
+--------------------------------
+
+GitHub Profile Search
+=================
+
+Count and sum the scores of a bowling game for one player (in JavaScript).
+
+A bowling game consists of 10 frames in which the player tries to knock down the 10 pins. In every frame the player can roll one or two times. The actual number depends on strikes and spares. The score of a frame is the number of knocked down pins plus bonuses for strikes and spares. After every frame the 10 pins are reset.
+
+
+### Optional Extra
+
+Create a nice interactive animated interface with jQuery.
+
+
+
+Technologies used
+-----------------
+
+  * Testing
+    * Jasmine
+
+  * Back end framework
+    * JavaScript
+
+  * Front end framework
+    * jQuery
+
+
+Functionalities requested
+-------------------------
+
+
+
+Setting up testing environment
+------------------------------
+
+In order to play around with this app you need to clone the repo shown below and
+execute the following commands to be functional.
+
+```sh
+$ git clone git@github.com:Willibaur/gitHub-Profiles-AngularJS.git
+$ cd gitHub-Profiles-AngularJS
+$ bower install
+$ npm install
+```
+
+If you want to run all tests written previously for the backend, you need to
+execute:
+
+```sh
+$ npm test
+```
+
+If you want to run all tests written previously for the frontend, you need to
+execute:
+
+```sh
+$ protractor test/e2e/conf.js
+```
+
+Running the app
+---------------
+
+You need to start the server before running the app, it will be served on your
+port number 8080.
+
+```sh
+$ npm start
+```
+
+Then you can go on your browser:
+
+`localhost:8080`
+
+
+Contributors
+------------
+
+* [William Bautista](https://github.com/Willibaur)
