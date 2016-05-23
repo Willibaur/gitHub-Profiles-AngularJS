@@ -1,5 +1,5 @@
 
-
+[![Build Status](https://travis-ci.org/Willibaur/gitHub-Profiles-AngularJS.svg?branch=master)](https://travis-ci.org/Willibaur/gitHub-Profiles-AngularJS)
 --------------------------------
 
 GitHub Profile Search
