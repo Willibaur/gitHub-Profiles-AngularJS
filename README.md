@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/Willibaur/gitHub-Profiles-AngularJS.svg?branch=master)](https://travis-ci.org/Willibaur/gitHub-Profiles-AngularJS)  [![Coverage Status](https://coveralls.io/repos/github/Willibaur/gitHub-Profiles-AngularJS/badge.svg?branch=master)](https://coveralls.io/github/Willibaur/gitHub-Profiles-AngularJS?branch=master)
+[![Build Status](https://travis-ci.org/Willibaur/gitHub-Profiles-AngularJS.svg?branch=master)](https://travis-ci.org/Willibaur/gitHub-Profiles-AngularJS)  
 --------------------------------
 
 GitHub Profile Search

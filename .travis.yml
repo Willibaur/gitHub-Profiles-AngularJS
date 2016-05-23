@@ -1,6 +1,5 @@
 script:
   - npm test
-  - node_modules/karma/bin/karma start karma.coverage.js --single-run
 
 after_script:
   "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
