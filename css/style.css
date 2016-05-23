@@ -11,3 +11,27 @@
     -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
     box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
 }
+
+body {
+  background-color: rgb(123, 184, 207);
+  text-align: center;
+}
+
+ a{
+  margin-top: 10px;
+  display:block;
+  font-size: 18px;
+  color: white;
+
+}
+
+form {
+    display: inline-block;
+    text-align: center;
+}
+
+h1 {
+  font-family: serif;
+  font-style: italic;
+  text-align: center;
+}
