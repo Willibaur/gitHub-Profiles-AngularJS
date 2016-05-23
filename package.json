@@ -4,7 +4,7 @@
   "description": "Single Page Application requesting info from GitHub API",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "nodemon server.js",
     "test": "karma start test/karma.conf.js",
     "e2e": "protractor test/e2e/conf.js"
   },
